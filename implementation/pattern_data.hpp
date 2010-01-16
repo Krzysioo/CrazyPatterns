@@ -1,7 +1,7 @@
 #ifndef PATTERN_DATA_HPP_
 #define PATTERN_DATA_HPP_
 
-#define MAX_HASH 1000000
+#define MAX_HASH 100000
 
 namespace Hex {
 

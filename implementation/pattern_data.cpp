@@ -23,15 +23,16 @@ PatternData::PatternData() {
 	ratio = new float[MAX_HASH];
 	found = new unsigned int[MAX_HASH];
 	picked = new unsigned int[MAX_HASH];	
-
+	
 	/* array has to cleaned in case some pattern doesn't appear in the learning set and ratio array would contain some junk */
+	
 	for(int i=0; i<MAX_HASH; i++)
 	{
-		ratio[patternHash] = 1.0;
-		found[patternHash] = 1;
-		picked[patternHash] = 1;	
+		ratio[i] = 1.0;
+		found[i] = 1;
+		picked[i] = 1;	
 	}
-
+	
 	inputStream.open("pattern.data");
 
 	if (!inputStream) {
